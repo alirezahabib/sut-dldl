@@ -1,0 +1,144 @@
+\documentclass[a4paper,oneside,12pt]{book}
+
+%----------------------------------------------------------------------------------------
+%	README!
+%   Welcome. It's worth having a read through this file
+%   to set up the broad parameters, such as the name of
+%   the degree, the school/department, the type of work
+%   (dissertation/Final Year Project/report, etc. as well
+%   as your own details.
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	COVER PAGE
+%   The cover page is laid out in title/title.tex. You can choose a colour
+%   or black and white logo
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%   Put title, author name, degree, type of work, school, department in here
+%   It will be used for the title page and for the embedded PDF information
+%----------------------------------------------------------------------------------------
+
+\newcommand{\thesistitle}{
+طراحی مدار چاپی\\
+واحد محاسبات و منطق
+(ALU)
+} % Your thesis title, this is used in the title and abstract
+\newcommand{\degree}{
+\href{http://www.sharif.edu/}{دانشگاه صنعتی شریف}\\
+\href{http://ce.sharif.edu/}{دانشکده مهندسی کامپیوتر}
+} % Your degree name, this is used in the title page and abstract
+\newcommand{\typeofthesis}{Thesis} % dissertation, Final Year Project, report, etc.
+\newcommand{\authorname}{
+علیرضا حبیب‌زاده
+}
+\newcommand{\authorid}{\lr{99109393}}
+
+\newcommand{\keywords}{this, that, more} % Keywords for your thesis
+\newcommand{\school}{
+گزارش کار ششم آزمایشگاه مدارهای منطقی
+}
+
+%% Comment out the next line if you don't want a department to appear
+\newcommand{\department}{دکتر شاهین حسابی} % Your research group's name and URL, this is used in the title page
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\thesistitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywords} % Set the PDF's keywords to your keywords
+\hypersetup{pdfsubject=\degree} % Set the PDF's keywords to your keywords
+}
+
+%% Language and font encodings
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+%\usepackage[english]{babel}
+\usepackage{lipsum}
+\usepackage{ragged2e} %allows for text alignment preferences
+
+%% Bibliographical stuff
+\usepackage[round,sort,comma,numbers]{natbib}
+
+%% Document size
+% include showframe as an option if you want to see the boxes
+\usepackage[a4paper,top=2.56cm,bottom=2.56cm,left=2.56cm,right=2.56cm, head = 16pt]{geometry}
+\setlength{\marginparwidth}{2cm}
+%% Useful packages
+\usepackage{amsmath}
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\usepackage[pdftex]{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{xcolor}
+\usepackage{pdfpages}
+\usepackage{caption} % if no caption, no colon
+%\usepackage{sfmath} %use sans-serif in the maths sections too
+\usepackage[parfill]{parskip}    % Begin paragraphs with an empty line rather than an indent
+\usepackage{setspace} % to permit one-and-a-half or double spacing
+\usepackage{enumerate} % fancy enumerations like (i) (ii) or (a) (b) and suchlike
+\usepackage{booktabs} % To thicken table lines
+\usepackage{fancyhdr}
+
+%\pagestyle{plain} % Embrace simplicity!
+
+%% Uncomment the following block if you want your name and ID at the top of
+%% (almost) every page.
+
+\pagestyle{fancy}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\thepage}
+%\ifdefined\authorid
+%\chead{\it \authorname\ (\authorid)}
+%\else
+%\chead{\it \authorname}
+%\fi
+%% End of block
+
+%% It is not a requirement of the university that the font should be sans-serif, but
+%% the Mechanical engineers require it. Comment out the following line to disable it
+%%\renewcommand{\familydefault}{\sfdefault} %use the sans-serif font as default
+
+%% If you're not using sans-serif, consider using Palatino instead of the LaTeX standard
+\usepackage{mathpazo} % Use the Palatino font by default if you prefer it to Computer Modern
+
+\renewcommand{\theequation}{\arabic{equation}} %% use continuous equation numbers
+
+%% Format Chapter headings appropriately
+\usepackage{titlesec}
+\usepackage{xepersian}
+\definecolor{tcdblue}{cmyk}{0.94, 0.38, 0, 0.27}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{tcdblue}{|}\hsp}{0pt}{\Huge\bfseries}
+
+\title{\thesistitle}
+\author{\authorname}
+
+\settextfont{FreeFarsi}
+\frontmatter
+\begin{document}
+\input{title/title.tex}
+\pagenumbering{roman}
+\doublespacing
+
+\newpage
+\chapter{مقدمه}
+در این جلسه
+به کمک نرم‌افزار پروتئوس مدار
+ALU
+را که در آزمایش قبل ساختیم، بر روی یک برد مدار چاپی
+پیاده می‌کنیم.
+ 
+ همه‌ی بخش‌های این آزمایش در نرم‌افزار
+ Proteus
+ انجام خواهد شد.
+ البته از قسمت جدید از نرم‌افزار کمک خواهیم گرفت که مخصوص طراحی مدار چاپی است.
+
+\newpage \tableofcontents
+
+\mainmatter
+\input{part1/part1}
+
+\end{document}

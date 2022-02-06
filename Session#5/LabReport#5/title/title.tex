@@ -1,0 +1,56 @@
+\begin{titlepage}
+
+\center % Center everything on the page
+
+%% All the text parameters should be taken from the start of the main.tex file.
+%% You should only alter stuff here if you want to change the layout
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+%% Choose one of the following -- a colour or black-and-white logo
+
+\includegraphics[width=0.3\textwidth]{title/logo.png}\\[1cm] 
+\vspace{1cm}
+\ifdefined\school
+\Large \textsc{\school} \\[1.5cm] % Minor heading such as course title
+\ifdefined\department
+\large \department\\[1.5cm] % Minor heading such as course title
+\fi
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\makeatletter
+\textsc{{ \huge \bfseries \thesistitle}}\\[1.5cm] % Title of your document
+ 
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\ifdefined\authorid
+نویسنده:
+\authorname\\ % Your name
+شماره دانشجویی:
+\authorid\\[2cm] % Your Student ID
+\else
+\textsc{\authorname}\\[2cm] % Your name
+\fi
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+\textsc{{\large \today}}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	TYPE OF THESIS SECTION
+%----------------------------------------------------------------------------------------
+\vfill
+
+\textsc{\normalsize \degree}
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}

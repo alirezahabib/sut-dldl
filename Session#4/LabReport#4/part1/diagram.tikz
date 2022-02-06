@@ -1,0 +1,62 @@
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,315); %set diagram left start at 0, and has height of 315
+
+
+% Text Node
+\draw    (211, 93) circle [x radius= 16.97, y radius= 16.97]   ;
+\draw (201,84.4) node [anchor=north west][inner sep=0.75pt]    {$T_{1}$};
+% Text Node
+\draw    (103, 91.5) circle [x radius= 20.84, y radius= 20.84]   ;
+\draw (87,84) node [anchor=north west][inner sep=0.75pt]  [font=\small] [align=left] {Start};
+% Text Node
+\draw    (275, 178) circle [x radius= 16.97, y radius= 16.97]   ;
+\draw (265,169.4) node [anchor=north west][inner sep=0.75pt]    {$T_{2}$};
+% Text Node
+\draw    (350, 94) circle [x radius= 16.97, y radius= 16.97]   ;
+\draw (340,85.4) node [anchor=north west][inner sep=0.75pt]    {$T_{3}$};
+% Text Node
+\draw    (419, 94) circle [x radius= 16.97, y radius= 16.97]   ;
+\draw (409,85.4) node [anchor=north west][inner sep=0.75pt]    {$T_{4}$};
+% Text Node
+\draw    (490, 95) circle [x radius= 16.97, y radius= 16.97]   ;
+\draw (480,86.4) node [anchor=north west][inner sep=0.75pt]    {$T_{5}$};
+% Text Node
+\draw    (571.5, 91.5) circle [x radius= 20.41, y radius= 20.41]   ;
+\draw (556,84) node [anchor=north west][inner sep=0.75pt]  [font=\small] [align=left] {Alert};
+% Text Node
+\draw    (572.5, 193.5) circle [x radius= 23.93, y radius= 23.93]   ;
+\draw (553,186) node [anchor=north west][inner sep=0.75pt]  [font=\small] [align=left] {Finish};
+% Text Node
+\draw (205,128) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize] [align=left] {function == hot};
+% Text Node
+\draw (235,79) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize] [align=left] {function == cold};
+% Connection
+\draw    (123.84,91.79) -- (192.03,92.74) ;
+\draw [shift={(194.03,92.76)}, rotate = 180.8] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+% Connection
+\draw    (221.21,106.56) -- (236.38,126.71)(248.41,142.69) -- (263.59,162.84) ;
+\draw [shift={(264.79,164.44)}, rotate = 233.02] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+% Connection
+\draw    (286.3,165.34) -- (337.37,108.15) ;
+\draw [shift={(338.7,106.66)}, rotate = 131.76] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+% Connection
+\draw    (366.97,94) -- (400.03,94) ;
+\draw [shift={(402.03,94)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+% Connection
+\draw    (435.97,94.24) -- (471.03,94.73) ;
+\draw [shift={(473.03,94.76)}, rotate = 180.81] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+% Connection
+\draw    (506.96,94.27) -- (549.11,92.46) ;
+\draw [shift={(551.11,92.38)}, rotate = 177.54] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+% Connection
+\draw    (227.97,93.12) -- (331.03,93.86) ;
+\draw [shift={(333.03,93.88)}, rotate = 180.41] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+% Connection
+\draw    (571.7,111.91) -- (572.25,167.57) ;
+\draw [shift={(572.27,169.57)}, rotate = 269.44] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+
+\end{tikzpicture}
