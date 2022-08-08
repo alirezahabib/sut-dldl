@@ -1,2 +1,3 @@
-# SUT-DLDL2021
-My works on Digital Logic Design Lab at Sharif University of Technology.
+# Digital Logic Design Lab
+
+Sharif University of Technology
